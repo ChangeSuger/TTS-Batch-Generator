@@ -1,0 +1,14 @@
+url: "https://d352fcc15e5693bab6.gradio.live/" # API 的地址
+
+batch: 2 # 每条文本生成的音频数量
+
+TTS_config:
+  origin_lang: "日文" # 参考音频的语种
+  target_lang: "日文" # 目标音频的语种
+  slice_method: "凑四句一切" # 切分方式，候选值："不切"、"凑四句一切"
+  sampling_step: 32 # 采样步长，候选值："4"、"8"、"16"、"32"
+  speed: 1 # 语速，0.6-1.65
+  pause_between_sentences: 0.3 # 句间停顿秒数，0.1-0.5
+  top_k: 15 # 1-100
+  top_p: 1 # 0-1
+  temperature: 1 # 0-1

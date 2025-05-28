@@ -1,0 +1,10 @@
+# sentiment，
+
+default:
+  # name of audio file
+  audio: "voice_selfep_3rdaniv_night_08_19.mp3"
+  # text
+  text: "えっと……えななんこと、東雲絵名です。 “25時、ナイトコードで。”の、イラストを担当しています"
+motivated:
+  audio: "voice_selfep_3rdaniv_night_17_19.mp3"
+  text: "っていうわけで、 これからも応援よろしくお願いします"

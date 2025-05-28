@@ -1,0 +1,16 @@
+{
+  "name": "tts-batch-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@gradio/client": "^1.15.0",
+    "js-yaml": "^4.1.0"
+  }
+}
