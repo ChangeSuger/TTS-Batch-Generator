@@ -5,6 +5,7 @@ import {
     readFileSync,
     writeFileSync,
     existsSync,
+    mkdirSync,
 } from 'fs';
 import yaml from 'js-yaml';
 import { fileURLToPath } from 'url';
@@ -170,6 +171,14 @@ async function tts_wav_generate(originText, times = 3) {
     }
 
 }
+
+// 创建输出文件夹
+try {
+    mkdirSync(
+        path.join(__dirname, OUTPUT_DIRNAME),
+        { recursive: true },
+    );
+} catch (e) {}
 
 for (const origin_text of origin_texts) {
     await tts_wav_generate(origin_text, batch);
